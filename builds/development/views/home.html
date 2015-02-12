@@ -20,23 +20,27 @@
     </tr>
 	</table>
 	
-	<form class="add-project-form" name="addProjectForm"
+	<form class="add-project-form panel panel-primary" name="addProjectForm"
 		ng-submit="addProject()"
 		novalidate="true">
 			
-		<h2 class="lead">Add a project</h2>
+		<div class="panel-heading">
+			<h2 class="panel-title">Add a project</h2>
+		</div>
 			
-		<div class="form-group">
-			<label for="project-title">Title</label>
-			<input class="form-control" type="text" ng-required="true" ng-model="project.title"/>
-		</div>
-		<div class="form-group">
-			<label for="project-desc">Description</label>
-			<input class="form-control" type="text" ng-model="project.desc"/>
-		</div>
-		<div class="form-group pull-left">
-			<label for="project-time">Hours</label>
-			<input class="form-control" type="number" min="0" ng-model="project.hours"/>
+		<div class="panel-body">	
+			<div class="form-group">
+				<label for="project-title">Title</label>
+				<input class="form-control" type="text" ng-required="true" ng-model="project.title"/>
+			</div>
+			<div class="form-group">
+				<label for="project-desc">Description</label>
+				<input class="form-control" type="text" ng-model="project.desc"/>
+			</div>
+			<div class="form-group pull-left">
+				<label for="project-time">Hours</label>
+				<input class="form-control" type="number" min="0" ng-model="project.hours"/>
+			</div>
 		</div>
 		
 		<button type="submit" id="add-project-submit" class="btn btn-primary pull-right">Add Project</button>
