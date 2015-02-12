@@ -1,0 +1,12 @@
+{
+  "name": "TimeVault",
+  "version": "0.0.1",
+  "description": "A time keeping application",
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
+  "author": "Kirk Pettinga",
+  "devDependencies": {
+  }
+}

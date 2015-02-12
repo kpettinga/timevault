@@ -1,0 +1,23 @@
+<section class="add-project">
+<h1 class="page-heading lead">Add Project</h1>
+<form class="add-project-form" name="addProjectForm"
+	ng-submit="addProject()"
+	novalidate="true">
+		
+	<div class="form-group">
+		<label for="project-title">Title</label>
+		<input class="form-control" type="text" ng-required="true" ng-model="project.title"/>
+	</div>
+	<div class="form-group">
+		<label for="project-desc">Description</label>
+		<input class="form-control" type="text" ng-model="project.desc"/>
+	</div>
+	<div class="form-group pull-left">
+		<label for="project-time">Hours</label>
+		<input class="form-control" type="number" min="0" ng-model="project.hours"/>
+	</div>
+	
+	<button type="submit" id="add-project-submit" class="btn btn-primary pull-right">Add Project</button>
+		
+</form>
+</section>

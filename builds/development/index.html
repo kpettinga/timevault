@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="timeVaultApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Time Vault</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="icon" type="image/x-icon" href="http://example.com/favicon.ico" />
+  <link rel="icon" type="image/png" href="http://example.com/favicon.png" />
+  <link rel="icon" type="image/gif" href="http://example.com/favicon.gif" />
+  
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/lib/angular-route.min.js"></script>
+  
+  	<!-- Firebase -->
+	<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+	<!-- AngularFire -->
+	<script src="https://cdn.firebase.com/libs/angularfire/0.9.2/angularfire.min.js"></script>
+  
+  <script src="js/app.js"></script>
+  <script src="js/controllers/project.js"></script>
+  <script src="js/controllers/home.js"></script>
+
+</head>
+
+<body class="inverse">
+
+	<div class="page container">
+		
+		<nav class="navbar navbar-default navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="#/" class="navbar-brand"><big><small class="glyphicon glyphicon-time"></small>&nbsp;Time Vault</big></a>
+				</div>
+				<!--
+<div class="collapse navbar-collapse">
+					<a href="#/add-project" class="btn btn-default btn-inverse navbar-btn navbar-right"><i class="small glyphicon glyphicon-plus"></i> Project</a>
+				</div>
+-->
+			</div>
+		</nav>
+		
+		<main class="row container-fluid" ng-view></main>
+	
+	</div>
+
+</body>
+</html>

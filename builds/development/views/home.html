@@ -1,0 +1,45 @@
+<section class="projects-overview">
+	
+	<table class="table table-striped">
+		<thead>
+      <tr>
+        <th>Project Title</th>
+        <th>Description</th>
+        <th>Total Hours</th>
+        <th></th>
+      </tr>
+    </thead>
+		<tr ng-repeat="(key, project) in allProjects">
+      <td class="lead">{{project.title}}</td>
+      <td>{{project.description}}</td>
+      <td>{{project.hours}}</td>
+      <td width="16%">
+	      <a href="#" class="btn btn-xs btn-link">Edit</a>&nbsp;
+	      <button class="btn btn-xs btn-link" ng-click="deleteProject(key)">Trash</button>
+	    </td>
+    </tr>
+	</table>
+	
+	<form class="add-project-form" name="addProjectForm"
+		ng-submit="addProject()"
+		novalidate="true">
+			
+		<h2 class="lead">Add a project</h2>
+			
+		<div class="form-group">
+			<label for="project-title">Title</label>
+			<input class="form-control" type="text" ng-required="true" ng-model="project.title"/>
+		</div>
+		<div class="form-group">
+			<label for="project-desc">Description</label>
+			<input class="form-control" type="text" ng-model="project.desc"/>
+		</div>
+		<div class="form-group pull-left">
+			<label for="project-time">Hours</label>
+			<input class="form-control" type="number" min="0" ng-model="project.hours"/>
+		</div>
+		
+		<button type="submit" id="add-project-submit" class="btn btn-primary pull-right">Add Project</button>
+	</form>
+	
+</section>
